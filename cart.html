@@ -8,6 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?
          family=Poppins:wght@300;400;500;600;700&display=swap"
          rel="stylesheet">
+         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+         <script type="module">
+            import { initializeRazorpay } from './razorpay.js';
+            window.onload = initializeRazorpay;
+        </script>
          <link rel="stylesheet" href="https:// stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -105,7 +110,10 @@
             </tr>
         </table>
     </div>
-   </div>
+    <div style="background-color: red; padding: 4px;">
+        <button id="rzp-button1">Pay with Razorpay</button>
+    </div>
+</div>
 
                    
         
